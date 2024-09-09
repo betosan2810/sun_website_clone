@@ -1,0 +1,101 @@
+/* Tổng quan */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.logo img {
+    width: 150px; /* Chỉnh lại kích thước logo */
+    height: auto; /* Tự động điều chỉnh chiều cao để giữ tỉ lệ hình ảnh */
+    padding: 10px 20px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+}
+
+
+/* .language-switcher {
+    display: flex;
+} */
+.language-switcher {
+    display: flex;
+    align-items: center;
+}
+
+.language-switcher .lang {
+    border: 1px solid #ffffff; 
+    background-color: transparent; /* Nền trong suốt */
+    padding: 5px 15px; /* Căn lề bên trong nút */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold;
+    cursor: pointer;
+    color: #777; /* Màu chữ mặc định */
+    transition: all 0.3s ease; /* Hiệu ứng khi hover hoặc khi kích hoạt */
+    border-radius: 10px;
+}
+
+.language-switcher .lang_active {
+    border: 1px solid #FF4500; 
+    background-color: transparent; /* Nền trong suốt */
+    padding: 5px 15px; /* Căn lề bên trong nút */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold;
+    cursor: pointer;
+    color: #FF4500; /* Màu chữ mặc định */
+    border-radius: 10px;
+}
+
+.language-switcher .lang:not(.active):hover {
+    color: #FF4500; /* Màu chữ đổi sang đỏ khi hover */
+}
+
+/*banner */
+.video-banner {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Chiều cao của video banner bằng chiều cao của màn hình */
+    overflow: hidden;
+    margin: 0;
+}
+.video__mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video__mobile video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo video bao phủ toàn bộ phần tử */
+}
