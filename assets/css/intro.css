@@ -1,0 +1,113 @@
+.business-section {
+    padding: 0px 0;
+    background-color: #f8f9fb;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 25px;
+}
+
+h2 {
+    text-align: left;
+    font-size: 28px;
+    margin-bottom: 0px;
+    color: #333;
+    padding-bottom: 0px;
+ 
+}
+
+.business-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.business-text {
+    flex: 1;
+    max-width: 400px;
+    
+    font-size: 16px;
+    color: #555;
+}
+
+.business-text p {
+    margin-bottom: 15px;
+    padding: 0px 0px 25px 25px; 
+
+}
+
+.business-text strong {
+    color: #333;
+}
+
+.business-image {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+    padding-left: 0px;
+    margin-right: 20px;
+}
+
+.business-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 48%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .red {
+    background-color: #D32F2F;
+    color: white;
+  }
+  
+  .white {
+    background-color: white;
+    color: #333;
+    border: 1px solid #E0E0E0;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .red-btn {
+    background-color: #D32F2F;
+    color: white;
+  }
+  
+  .red .btn {
+    background-color: white;
+    color: #D32F2F;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
