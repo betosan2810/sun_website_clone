@@ -16,7 +16,43 @@ header {
     padding: 10px 20px;
     background-color: #fff;
 }
+.fixed-header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
 
+/*menu_active */
+/* Định dạng cho các mục menu */
+.menu_active {
+    font-weight: normal;
+    color: #333;
+    padding: 10px 15px;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* Khi di chuột vào các mục menu */
+.menu_active:hover {
+    font-weight: bold; /* In đậm */
+    color: #c00; /* Thay đổi màu chữ */
+}
+
+/* Tạo thanh màu phía trên khi di chuột vào */
+.menu_active:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 25%;
+    right:0;
+    height: 4px;
+    background-color: #c00; /* Màu của thanh */
+    width: 50%;
+    border-radius: 2px; /* Bo tròn góc thanh */
+    transition: all 0.3s ease;
+}
 .logo img {
     width: 150px; /* Chỉnh lại kích thước logo */
     height: auto; /* Tự động điều chỉnh chiều cao để giữ tỉ lệ hình ảnh */
