@@ -1,0 +1,369 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.projects-section {
+    display: flex;
+    /* justify-content: space-around;
+    align-items: center; */
+    padding: 50px;
+    background-color: white;
+}
+
+.statistics {
+    text-align: left;
+    width: 50%;
+}
+
+.statistics .button {
+    width: 70%;
+}
+
+.stat-item {
+    margin-bottom: 0px;
+}
+
+.stat-item h2 {
+    font-size: 100px;
+    color: #D71E22; /* Màu đỏ đậm cho số */
+    margin: 20px;
+}
+
+.stat-item span {
+    font-size: 30px;
+    color: #D71E22;
+}
+
+.stat-item p {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0px 30px 0px;
+}
+
+.stat-item .project-button {
+    text-align: center;
+    width: 50%;
+}
+
+.projects-slider {
+    position: relative;
+}
+
+.project-card {
+    min-width: 250px;
+    max-width: 300px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 300px 0px 10px;
+    margin-right: 20px;
+    bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 22px;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.projects-slider .nav-buttons {
+    position: absolute;
+    text-align: right;
+    bottom: 0;
+    right: 0;
+}
+.project-btn {
+    text-align: right; 
+    padding: 30px; 
+    cursor: pointer; 
+}
+
+/* .arrow-left, .arrow-right {
+    font-size: 24px; 
+    color: #333; 
+    transition: color 0.3s; 
+    margin: 0 20px; 
+}
+
+.arrow-left:hover {
+    color: red; 
+}
+
+.arrow-right:hover {
+    color: red; 
+} */
+
+.view-detail-btn {
+    display: inline-block;
+    margin-top: 10px;
+    color: #D71E22;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.view-detail-btn:hover {
+    text-decoration: underline;
+}
+/* career */
+.career-section {
+    background-image: url('https://sun-asterisk.vn/wp-content/uploads/2020/11/career-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.career-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 0, 0, 0.8); /* Red overlay */
+    z-index: 1;
+}
+
+.career-content {
+    position: relative;
+    z-index: 2;
+}
+
+.career-content .button{
+    width: 50%;
+    margin: 0 auto;
+}
+.career-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.career-sub-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.career-description {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+/* Moi truong làm việc */
+.join-btn {
+    background-color: white;
+    color: red;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.join-btn:hover {
+    background-color: #ddd;
+}
+
+.join-btn i {
+    margin-left: 10px;
+}
+
+.work-environment-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f9fafb;
+}
+
+.work-environment-content {
+    max-width: 50%;
+}
+
+.work-environment-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.work-environment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.work-environment-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.work-environment-list i {
+    color: red;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.work-environment-list-title {
+    font-size: 18px;
+    color: #333;
+}
+
+.work-environment-image {
+    max-width: 45%;
+    position: relative;
+}
+
+.work-environment-image img {
+    width: 100%;
+}
+
+.details-button {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.details-button:hover {
+    background-color: #444;
+}
+/* article main */
+.main-header {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 700px;
+    align-items: center;
+    margin: 50px 100px;
+}
+
+h2 {
+    font-size: 26px;
+    color: #2d3748; /* Màu tối giống với chữ trong hình */
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa hai nút */
+}
+
+.nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f5f7f9; /* Màu nền tròn mờ */
+    font-size: 30px;
+    color: #a0aec0; /* Màu xám cho mũi tên */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #e2e8f0; /* Đổi màu khi di chuột qua */
+    color: red; /* Đổi màu chữ khi di chuột qua */
+}
+
+.left {
+    content: "<";
+}
+
+.right {
+    content: ">";
+}
+
+.news-slider {
+    width: 80%;
+    margin: 0 auto;
+     display: flex;
+}
+
+.news-slider .slick-slide {
+    margin: 0 15px;
+}
+
+.news-item {
+    border: 10px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+}
+
+.news-item .news-content {
+    padding: 10px;
+}
+
+.news-item .news-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.news-item .news-preview {
+    font-size: 14px;
+    color: #555;
+}
+
+.news-item .news-btn {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.news-item .news-btn a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.news-item .news-btn a:hover {
+    text-decoration: underline;
+}
+
+.container{
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;     /* Căn giữa theo chiều dọc nếu có chiều cao cụ thể */
+}
+
+.news-view-btn{
+    display: inline-block;
+    background-color: #333;
+    text-align: center;
+    color: white;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.news-under_btn {
+    padding: 20px;
+
+}
+
+.news-under_btn .button{
+    width: 50%;
+    margin: 0 auto;
+}

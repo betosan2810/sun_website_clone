@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sun asterisk</title>
+    <title>Sun asterisk english</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="../../assets/css/intro.css">
@@ -19,20 +19,23 @@
             
         </div>
         <div>
+        <!-- Menu Toggle (Checkbox và Label Hamburger) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
         <nav>
             <ul>
-                <li><a href="#" class="menu_active">Trang chủ</a></li>
-                <li><a href="#" class="menu_active">Về chúng tôi</a></li>
-                <li><a href="#" class="menu_active">Dự án</a></li>
-                <li><a href="#" class="menu_active">Cơ hội nghề nghiệp</a></li>
-                <li><a href="#" class="menu_active">Môi trường làm việc</a></li>
-                <li><a href="#" class="menu_active">Tin tức</a></li>
+                <li><a href="#" class="menu_active">Home</a></li>
+                <li><a href="#" class="menu_active">About Us</a></li>
+                <li><a href="#" class="menu_active">Career</a></li>
+                <li><a href="#" class="menu_active">Environment</a></li>
+                <li><a href="#" class="menu_active">Projects</a></li>
+                <li><a href="#" class="menu_active">News</a></li>
             </ul>
         </nav>
         </div>
         <div class="language-switcher">
-            <a class="lang_active">VI</a>
-            <a href="Eindex.html" class="lang">EN</a>
+            <a class="lang_active">EN</a>
+            <a href="index.html" class="lang">VI</a>
         </div>
     </header>
     <section class="video-banner">
@@ -40,7 +43,6 @@
     </section>
     <section class="business-section">
         <div class="business-container">
-          <br>
             <h2>Lĩnh vực kinh doanh</h2>
             <div class="business-content">
                 <div class="business-text">
@@ -73,7 +75,7 @@
                   Tìm hiểu thêm
                 </span>
                 <span class="button__icon">
-                  <i class="fa-solid fa-arrow-right"></i>
+                  <i class="fa-solid fa-arrow-right">→</i>
                 </span>
               </a>
             </li>
@@ -94,7 +96,7 @@
                   Tìm hiểu thêm
                 </span>
                 <span class="button__icon">
-                  <i class="fa-solid fa-arrow-right"></i>
+                  <i class="fa-solid fa-arrow-right">→</i>
                 </span>
               </a>
             </li>
@@ -116,29 +118,27 @@
                 <h2>300<span>++</span></h2>
                 <p>Dịch vụ được hỗ trợ</p>
             </div>
-            <a href="#" class="button button--bg-dark">
-              <span class="button__content">
-                Tìm hiểu thêm
-              </span>
-              <span class="button__icon">
-                <i class="fa-solid fa-arrow-right"></i>
-              </span>
-            </a>
+            <div class="project-button">
+                <a href="#" class="button button--bg-dark">
+                    <span class="button__content">
+                      Tìm hiểu thêm
+                    </span>
+                    <span class="button__icon">
+                      <i class="fa-solid fa-arrow-right">→</i>
+                    </span>
+                  </a>
+            </div>
         </div>
         <div class="projects-slider">
             <div class="project-card">
-              <div>Kurashicom Inc</div>
-              <br>
                 <h3>Dự án KURASHICOM</h3>
-                <br>
                 <p>Phát triển App giúp hiện thực hóa cách sống theo ý muốn của người dùng.</p>
-                <br>
-                <a href="#" class="view-detail-btn">Xem chi tiết&nbsp; <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#" class="view-detail-btn">Xem chi tiết</a>
             </div>
-            <div class="nav-buttons">
-              <div class="nav-button left"><</div>
-              <div class="nav-button right">></div>
-          </div>          
+            <div class="project-btn">
+                <span class="arrow-left"><</span>
+                <span class="arrow-right">></span>
+            </div>            
         </div> 
     </section>
     <section class="career-section">
@@ -150,14 +150,9 @@
                 Sun* luôn tìm kiếm những con người đam mê thử thách để tạo nên những giá trị "Awesome".<br>
                 Cùng trở thành một phần của Sun* ngay hôm nay.
             </div>
-            <a href="#" class="button button--bg-white">
-              <span class="button__content">
-                Gia nhập đội ngũ Sun*
-              </span>
-              <span class="button__icon">
-                <i class="fa-solid fa-arrow-right"></i>
-              </span>
-            </a>
+            <button class="join-btn">
+                Gia nhập đội ngũ Sun* →<i class="haru-icon haru-arrow-right"></i>
+            </button>
         </div>
     </section>
     <section class="work-environment-section">
@@ -180,14 +175,7 @@
         </div>
         <div class="work-environment-image">
             <img src="https://sun-asterisk.vn/wp-content/uploads/2023/09/human-centered.png" alt="Work Environment Image">
-            <a href="#" class="button button--bg-dark">
-              <span class="button__content">
-                Xem chi tiết
-              </span>
-              <span class="button__icon">
-                <i class="fa-solid fa-arrow-right"></i>
-              </span>
-            </a>
+            <a href="#" class="details-button">Xem chi tiết →</a>
         </div>
     </section>          
     <div class="main-header">
@@ -231,16 +219,8 @@
             </div>
         </div>
     </div>
-    <br>
-    <div class="news-under_btn">
-      <a href="#" class="button button--bg-dark">
-        <span class="button__content">
-          Xem nhiều tin hơn
-        </span>
-        <span class="button__icon">
-          <i class="fa-solid fa-arrow-right"></i>
-        </span>
-      </a>
+    <div class="container">
+        <button class="news-view-btn">Xem nhiều tin hơn →</button>
     </div>
     <div class="footer-section">
         <a href="index.html" class="logo">
