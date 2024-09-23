@@ -9,106 +9,65 @@ body {
     font-family: Arial, sans-serif;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+.fixed-top {
     background-color: #fff;
-}
-.fixed-header {
-    position: fixed;
     z-index: 1000;
-    width: 100%;
 }
 
-/*menu_active */
-/* Định dạng cho các mục menu */
-.menu_active {
-    font-weight: normal;
-    color: #333;
-    padding: 10px 15px;
-    position: relative;
+a {
     text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s ease;
+    color: inherit; /* or you can specify a color like 'color: #000;' */
 }
 
-/* Khi di chuột vào các mục menu */
-.menu_active:hover {
+.logo img {
+    width: 150px; /* Chỉnh lại kích thước logo */
+    height: auto; /* Tự động điều chỉnh chiều cao để giữ tỉ lệ hình ảnh */
+    padding: 20px;
+}
+
+.nav-link {
+    margin: 0;
+    padding-top: 20px;
+    position: relative;
+}
+
+.nav-link:hover {
     font-weight: bold; /* In đậm */
-    color: #c00; /* Thay đổi màu chữ */
+    color: rgba(204, 0, 0, 0.767); /* Thay đổi màu chữ */
 }
 
-/* Tạo thanh màu phía trên khi di chuột vào */
-.menu_active:hover::before {
+.container_navbar-active::before {
     content: '';
     position: absolute;
     top: 0;
     left: 25%;
-    right:0;
+    right: 25%;
     height: 4px;
-    background-color: #c00; /* Màu của thanh */
     width: 50%;
+    background-color: #c00; /* Màu của thanh */
     border-radius: 2px; /* Bo tròn góc thanh */
     transition: all 0.3s ease;
 }
-.logo img {
-    width: 150px; /* Chỉnh lại kích thước logo */
-    height: auto; /* Tự động điều chỉnh chiều cao để giữ tỉ lệ hình ảnh */
-    padding: 10px 20px;
+
+.nav-link:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 25%;
+    right: 25%;
+    height: 4px;
+    width: 50%;
+    background-color: #c00; /* Màu của thanh */
+    border-radius: 2px; /* Bo tròn góc thanh */
+    transition: all 0.3s ease;
 }
 
-
-nav ul {
-    display: flex;
-    list-style-type: none;
+.btn {
+    padding: 0 12px;
 }
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #555;
-    font-size: 16px;
-}
-
-
-/* .language-switcher {
-    display: flex;
-} */
-.language-switcher {
-    display: flex;
-    align-items: center;
-}
-
-.language-switcher .lang {
-    border: 1px solid #ffffff; 
-    background-color: transparent; /* Nền trong suốt */
-    padding: 5px 15px; /* Căn lề bên trong nút */
-    font-size: 16px; /* Kích thước chữ */
-    font-weight: bold;
-    cursor: pointer;
-    color: #777; /* Màu chữ mặc định */
-    transition: all 0.3s ease; /* Hiệu ứng khi hover hoặc khi kích hoạt */
-    border-radius: 10px;
-}
-
-.language-switcher .lang_active {
-    border: 1px solid #FF4500; 
-    background-color: transparent; /* Nền trong suốt */
-    padding: 5px 15px; /* Căn lề bên trong nút */
-    font-size: 16px; /* Kích thước chữ */
-    font-weight: bold;
-    cursor: pointer;
-    color: #FF4500; /* Màu chữ mặc định */
-    border-radius: 10px;
-}
-
-.language-switcher .lang:not(.active):hover {
-    color: #FF4500; /* Màu chữ đổi sang đỏ khi hover */
+.lang:hover {
+    font-weight: bold; /* In đậm */
+    color: rgba(204, 0, 0, 0.767);
 }
 
 /*banner */
@@ -118,6 +77,7 @@ nav ul li a {
     height: 100vh; /* Chiều cao của video banner bằng chiều cao của màn hình */
     overflow: hidden;
     margin: 0;
+    z-index: 1;
 }
 .video__mobile {
     position: absolute;
@@ -135,5 +95,3 @@ nav ul li a {
     height: 100%;
     object-fit: cover; /* Đảm bảo video bao phủ toàn bộ phần tử */
 }
-
-/* responsive giao diện */
