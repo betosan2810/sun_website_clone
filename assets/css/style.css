@@ -228,8 +228,6 @@ a {
     right: -64px;
     top: 50%;
     overflow-x: hidden;
-    /* -webkit-transform: translateY(-50%);
-    transform: translateY(-70%); */
 
 }
 
@@ -323,4 +321,193 @@ a {
 
 .button--bg-dark:hover>* {
     z-index: 2;
+}
+
+/* Phần dự án của chúng tôi */
+.stat-number {
+    font-size: 7rem;
+    font-weight: bold;
+    color: red;
+}
+
+.stat-plus {
+    font-size: 3rem;
+    color: red;
+}
+
+.stat-label {
+    font-size: 1.2rem;
+    color: #4f4f4f;
+}
+
+.project_sub-circle {
+    position: relative;
+}
+
+.project_sub-circle::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #d82329;
+    position: absolute;
+    /* right: -64px; */
+    left: 60vh;
+    top: 0;
+    overflow-x: hidden;
+    transform: translateY(-10vh);
+}
+
+/* Phần slider bên phải */
+
+.carousel-item img {
+    filter: blur(35px);
+    opacity: 0.5;
+    height: 85vh;
+    /* Đặt chiều cao cho ảnh */
+    object-fit: cover;
+    /* Ảnh được cắt phù hợp */
+}
+
+.carousel-item h5:hover {
+    color: #c00;
+    cursor: pointer;
+}
+
+.carousel-caption {
+    color: #2b3441;
+}
+
+.projects-slider {
+    position: relative;
+}
+
+/* Điều chỉnh vị trí của nhóm nút */
+.nav-buttons {
+    position: absolute;
+    bottom: -20px;
+    /* Đặt nút ở góc dưới */
+    right: 20px;
+    /* Căn bên phải */
+    display: flex;
+    gap: 20px;
+    /* Khoảng cách giữa các nút */
+}
+
+/* Kiểu dáng nút */
+.nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f5f7f9;
+    /* Màu nền tròn mờ */
+    font-size: 40px;
+    color: #a0aec0;
+    /* Màu xám cho mũi tên */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hiệu ứng hover khi rê chuột qua nút */
+.nav-button:hover {
+    background-color: red;
+    /* Đổi màu nền khi di chuột qua */
+    color: #fff;
+    /* Đổi màu mũi tên khi di chuột qua */
+}
+
+/* Sửa lại các kiểu dáng Bootstrap mặc định cho mũi tên */
+.carousel-control-prev,
+.carousel-control-next {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: none;
+    /* Ẩn biểu tượng mũi tên mặc định của Bootstrap */
+}
+
+/* career */
+.career-section {
+    background-image: url('https://sun-asterisk.vn/wp-content/uploads/2020/11/career-bg.jpg');
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 1%;
+    position: relative;
+}
+
+.career-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 0, 0, 0.678);
+    /* Red overlay */
+    z-index: 1;
+    border-radius: 1%;
+}
+
+.career-content {
+    position: relative;
+    z-index: 2;
+}
+
+.career-content::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.8);
+    position: absolute;
+    top: -10%;
+    overflow-x: hidden;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.career-content .button {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.career-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.career-title::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.8);
+    position: absolute;
+    left: 5%;
+    transform: translateY(-100%);
+    overflow-x: hidden;
+    z-index: -1;
+}
+
+.career-sub-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.career-description {
+    font-size: 20px;
+    margin-bottom: 30px;
 }
