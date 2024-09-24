@@ -360,21 +360,22 @@ a {
 
 /* Phần slider bên phải */
 
-.carousel-item img {
+.project-slider .carousel-item img {
     filter: blur(35px);
     opacity: 0.5;
-    height: 85vh;
+    width: 100%;
+    max-height: 85vh;
     /* Đặt chiều cao cho ảnh */
     object-fit: cover;
     /* Ảnh được cắt phù hợp */
 }
 
-.carousel-item h5:hover {
+.project-slider .carousel-item h5:hover {
     color: #c00;
     cursor: pointer;
 }
 
-.carousel-caption {
+.project-slider .carousel-caption {
     color: #2b3441;
 }
 
@@ -420,17 +421,11 @@ a {
 }
 
 /* Sửa lại các kiểu dáng Bootstrap mặc định cho mũi tên */
-.carousel-control-prev,
+.project-slider .carousel-control-prev,
 .carousel-control-next {
     background: none;
     border: none;
     padding: 0;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    display: none;
-    /* Ẩn biểu tượng mũi tên mặc định của Bootstrap */
 }
 
 /* career */
@@ -510,4 +505,98 @@ a {
 .career-description {
     font-size: 20px;
     margin-bottom: 30px;
+}
+
+/* Đảm bảo responsive */
+@media (max-width: 768px) {
+    .project-slider .carousel-item img {
+        max-height: 60vh;
+        /* Chiều cao tối đa nhỏ hơn cho màn hình nhỏ */
+    }
+
+    .nav-button {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        /* Giảm kích thước nút trên màn hình nhỏ */
+    }
+}
+
+@media (max-width: 576px) {
+
+    .project-slider .carousel-item img {
+        filter: blur(35px);
+        opacity: 0.5;
+        width: 100%;
+
+        min-height: 50vh;
+        /* Đặt chiều cao cho ảnh */
+        object-fit: cover;
+        /* Ảnh được cắt phù hợp */
+    }
+
+    .carousel-caption {
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+}
+
+/* phần môi trường làm việc */
+.envi-icon {
+    color: #c00;
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.list-unstyled {
+    color: #4f4f4f;
+}
+
+/* phần văn hóa sự kiện */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4f4f4f;
+}
+
+@media screen and (min-width: 568px) {
+    .cards-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.card {
+    margin: 0.5em;
+}
+
+@media screen and (max-width: 567px) {
+    .card:not(:first-child) {
+        display: none;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+
+}
+
+.event-container {
+    position: relative;
+}
+
+/* Điều chỉnh vị trí của nhóm nút */
+.event-button {
+    position: absolute;
+    top: -60px;
+    right: 80px;
+    /* Căn bên phải */
+    display: flex;
+    gap: 20px;
+    /* Căn bên phải */
+    /* Khoảng cách giữa các nút */
 }
