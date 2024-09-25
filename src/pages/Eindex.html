@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<body>
+    <header class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid fixed-top">
+            <!-- Logo -->
+            <div class="col-4 ps-5">
+                <a class="navbar-brand logo" href="#"><img src="../../assets/images/logo-sun@2x.png"
+                        alt="MyWebsite Logo"></a>
+            </div>
+
+            <!-- Nút Offcanvas cho màn hình nhỏ -->
+
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <nav class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-danger container_navbar-active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Career</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Environment</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Ngôn ngữ -->
+            <div class="mt-3 col-1 d-lg-block">
+                <a class="btn btn-outline-danger">EN</a>
+                <a href="index.html" class="text-decoration-none lang">VI</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </div>
+    </header>
+
+    <section class="video-banner">
+        <div class="video__mobile">
+            <video src="https://sun-asterisk.vn/wp-content/uploads/2020/11/mv-sp.mp4" autoplay="" muted=""
+                webkit-playsinline="" playsinline="" loop=""></video>
+        </div>
+    </section>
+    <section class="business-section">
+        <div>
+            <h2 class="business-title ms-5">Lĩnh vực kinh doanh</h2>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 business-content pe-4">
+                    <p class="business-text me-2">
+                        Là một Digital Creative Studio, Sun* luôn đề cao tinh thần làm chủ sản phẩm, tư duy sáng tạo
+                        trong mỗi dự án để mang đến những trải nghiệm "<strong>Awesome</strong>"nhất cho
+                        end-user.
+                    </p>
+                    <p class="business-text me-2">
+                        Với hai dòng dịch vụ là "<strong>Creative & Engineering</strong>" và "<strong>Talent
+                            Platform</strong>", Sun* đã và đang từng bước
+                        cùng công nghệ tạo ra những giá trị tốt đẹp cho xã hội.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://sun-asterisk.vn/wp-content/uploads/2020/11/intro-business.png"
+                        alt="Business Image" class="business-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Phần card -->
+    <section class="container my-5 pb-5">
+        <div class="row">
+            <!-- Creative & Engineering Card -->
+            <div class="col-md-6">
+                <div class="card creative-studio__item creative-studio__item--active">
+                    <div class="card-body creative-studio__sub-title">
+                        <p class="card-title-small">Digital Creative Studio</p>
+                        <h3 class="card-title">Creative <br>& Engineering</h3>
+                        <br>
+                        <p class="card-text fs-6">Đội ngũ nhân lực dồi dào chuyên về công nghệ, thiết kế và kinh
+                            doanh.
+                        </p>
+                        <br>
+                        <a href="#" class="button button--bg-white">
+                            <span class="button__content">
+                                Tìm hiểu thêm
+                            </span>
+                            <span class="button__icon">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Talent Platform Card -->
+            <div class="col-md-6">
+                <div class="card creative-studio__item creative-studio__item_no">
+                    <div class="card-body creative-studio__sub-title">
+                        <p class="card-title-small">Digital Creative Studio</p>
+                        <h3 class="card-title">Talent <br>Platform</h3>
+                        <br>
+                        <p class="card-text fs-6">Các giải pháp nguồn nhân lực hỗ trợ tăng trưởng kinh doanh bền vững.
+                        </p>
+                        <br>
+                        <a href="#" class="button button--bg-dark">
+                            <span class="button__content">
+                                Tìm hiểu thêm
+                            </span>
+                            <span class="button__icon">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5 pt-5 mb-5 ">
+        <div class="row">
+            <!-- Phần hiển thị số liệu đối tác và dịch vụ -->
+            <div class="col-md-6 project_sub-circle">
+
+                <h2 class="mb-5"><strong>Dự án của chúng tôi</strong></h2>
+                <div class="col-12 d-flex align-items-center justify-content-start">
+                    <div class="me-2">
+                        <span class="stat-number">200</span>
+                    </div>
+                    <div class="text-under">
+                        <span class="stat-plus">++</span><br>
+                        <span class="stat-label">Đối tác</span>
+                    </div>
+                </div>
+                <div class="col-12 d-flex align-items-center justify-content-start">
+                    <div class="me-2">
+                        <span class="stat-number">300</span>
+                    </div>
+                    <div class="text-under">
+                        <span class="stat-plus">++</span><br>
+                        <span class="stat-label">Dịch vụ được hỗ trợ</span>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <a href="#" class="button button--bg-dark" style="width: 80%;">
+                    <span class="button__content">
+                        Tìm hiểu thêm
+                    </span>
+                    <span class="button__icon">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Phần slider bên phải -->
+            <div class="col-md-4  ms-5 project-slider">
+                <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2021/03/Kurashicom.png"
+                                class="d-block slider-image" alt="Slide 1">
+                            <div class="carousel-caption d-md-block" style="text-align: left;">
+                                <div class="">
+                                    <p>Kurashicom Inc</p>
+                                    <h5><strong>Dự án KURASHICOM</strong></h5>
+                                    <p>Phát triển App giúp hiện thực hóa phong cách sống theo ý muốn</p>
+                                </div>
+                                <a href="#" class="text-danger">Xem chi tiết&nbsp;
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2021/03/zenkigen_01.png"
+                                class="d-block slider-image" alt="Slide 2">
+                            <div class="carousel-caption d-md-block" style="text-align: left;">
+                                <div class="">
+                                    <p>Công ty TNHH ZENKIGEN</p>
+                                    <h5><strong> Dự án HARUTAKA </strong></h5>
+                                    <p>“HARUTAKA” cho phép các công ty và người tìm việc có thể phỏng vấn trên web hoặc
+                                        trong video bất kể thời gian hay địa điểm nào.</p>
+                                </div>
+                                <a href="#" class="text-danger">Xem chi tiết&nbsp;
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- slide 3 -->
+                        <div class="carousel-item">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2021/03/zenkigen_01.png"
+                                class="d-block slider-image" alt="Slide 3">
+                            <div class="carousel-caption d-md-block" style="text-align: left;">
+                                <div class="">
+                                    <p>Công ty TNHH SSK</p>
+                                    <h5><strong> Dự án SSK </strong></h5>
+                                    <p>Thử thách để tiếp thêm năng lượng cho mọi người và xã hội với sports data.</p>
+                                </div>
+                                <a href="#" class="text-danger">Xem chi tiết&nbsp;
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Điều khiển slider -->
+                    <br>
+                    <div class="nav-buttons">
+                        <button class="carousel-control-next mx-5" type="button" data-bs-target="#projectCarousel"
+                            data-bs-slide="next">
+                            <span class="nav-button right" aria-hidden="true">
+                                &lt;
+                            </span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        <!-- Nút di chuyển về slide trước -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel"
+                            data-bs-slide="prev">
+                            <span class="nav-button left" aria-hidden="true">
+                                &gt; </span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        &nbsp;
+
+                        <!-- Nút di chuyển tới slide sau -->
+                    </div>
+
+                </div>
+                <!-- <div class="nav-buttons">
+                    <div class="nav-button left">
+                        < </div>
+                            <div class="nav-button right">
+                                >
+                            </div>
+                    </div> -->
+            </div>
+    </section>
+    <!-- cơ hội nghề nghiệp -->
+    <section class="container career-section mt-5">
+        <div class="career-content">
+            <div class="career-sub-title">Sun Asterisk</div>
+            <div class="career-title">Cơ hội nghề nghiệp</div>
+            <br>
+            <br>
+            <div class="career-description">Join us &amp; MAKE AWESOME THINGS THAT MATTER.</div>
+            <div class="career-description mb-5">
+                Sun* luôn tìm kiếm những con người đam mê thử thách để tạo nên những giá trị "Awesome".<br>
+                Cùng trở thành một phần của Sun* ngay hôm nay.
+            </div>
+            <br>
+            <a href="#" class="button button--bg-white">
+                <span class="button__content">
+                    Gia nhập đội ngũ Sun*
+                </span>
+                <span class="button__icon">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </a>
+        </div>
+    </section>
+    <!-- phần môi trường làm việc  -->
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <!-- Phần bên trái với các nội dung văn bản -->
+            <div class="col-lg-6">
+                <h2 class="mb-5">Môi trường làm việc</h2>
+                <ul class="list-unstyled">
+                    <li class="mb-3 d-flex">
+                        <i class="fa-solid fa-check envi-icon"></i>
+                        <p>#ActiveChallenge: Chủ động tạo ra công việc thử thách liên tục cho bản thân.
+                        </p>
+                    </li>
+                    <li class="mb-3 d-flex">
+                        <i class="fa-solid fa-check envi-icon"></i>
+                        <p>#ActiveLearn: Học tập trong một tổ chức có đầy đủ các thành tố: môi trường học
+                            tập, cơ hội học tập, năng lực học tập.</p>
+                    </li>
+                    <li class="mb-3 d-flex">
+                        <i class="fa-solid fa-check envi-icon"></i>
+                        <p>#ActiveJoy:Sống trong môi trường văn hóa hướng tới giá trị nhân văn, và hạnh
+                            phúc cho mọi người.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Phần bên phải với hình ảnh -->
+            <div class="col-lg-6 text-center position-relative">
+                <img src="https://sun-asterisk.vn/wp-content/uploads/2023/09/human-centered.png" alt="Hình ảnh"
+                    class="img-fluid">
+                <!-- Nút "Xem chi tiết" -->
+                <a href="#" class="button button--bg-dark position-absolute bottom-0 ms-5 mb-5" style="width: 80%;">
+                    <span class="button__content">
+                        Xem chi tiết
+                    </span>
+                    <span class="button__icon">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- phần văn hóa sự kiện -->
+    <div class="container event-container">
+        <div class="row mb-5 ms-5">
+            <div class="col-md-12 title">
+                Văn hóa - Sự kiện
+            </div>
+
+        </div>
+        <div class="row">
+            <div id="carouselExampleRide" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://news.sun-asterisk.com/images/440x248/f8e7e84c-29f1-4cbd-b2a3-263d42578a10.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title"><strong>Chinh phục chứng chỉ CKA 2024 cùng Hữu Kim (R&D):
+                                            "Kịch tính
+                                            và nhiều kinh nghiệm xương máu"</strong> </h6>
+                                    <h6 class="card-text">Sunner Hữu Kim (R&D) vừa trải qua hành trình thi chứng chỉ CKA
+                                        (Certified Kubernetes Administrator) trong năm 2024.</h6>
+                                    <br>
+                                    <a href="#" class="text-danger">Xem chi tiết&nbsp;
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card card-active-news" style="width: 18rem;">
+                                <img src="https://news.sun-asterisk.com/images/440x248/1f30a6d8-342c-4186-a9a0-d6190995cc81.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title"><strong>Chinh phục chứng chỉ CKA 2024 cùng Hữu Kim (R&D):
+                                            "Kịch tính
+                                            và nhiều kinh nghiệm xương máu"</strong> </h6>
+                                    <h6 class="card-text">Sunner Hữu Kim (R&D) vừa trải qua hành trình thi chứng chỉ CKA
+                                        (Certified Kubernetes Administrator) trong năm 2024.</h6>
+                                    <br>
+                                    <a href="#" class="text-danger">Xem chi tiết&nbsp;
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card card-active-news" style="width: 18rem;">
+                                <img src="https://news.sun-asterisk.com/images/440x248/7c2f69b3-631b-4b2a-aabc-4eddf1bf8359.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title"><strong>Chinh phục chứng chỉ CKA 2024 cùng Hữu Kim (R&D):
+                                            "Kịch tính
+                                            và nhiều kinh nghiệm xương máu"</strong> </h6>
+                                    <h6 class="card-text">Sunner Hữu Kim (R&D) vừa trải qua hành trình thi chứng chỉ CKA
+                                        (Certified Kubernetes Administrator) trong năm 2024.</h6>
+                                    <br>
+                                    <a href="#" class="text-danger">Xem chi tiết&nbsp;
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://news.sun-asterisk.com/images/440x248/1f30a6d8-342c-4186-a9a0-d6190995cc81.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title"><strong>Chinh phục chứng chỉ CKA 2024 cùng Hữu Kim (R&D):
+                                            "Kịch tính
+                                            và nhiều kinh nghiệm xương máu"</strong> </h6>
+                                    <h6 class="card-text">Sunner Hữu Kim (R&D) vừa trải qua hành trình thi chứng chỉ CKA
+                                        (Certified Kubernetes Administrator) trong năm 2024.</h6>
+                                    <br>
+                                    <a href="#" class="text-danger">Xem chi tiết&nbsp;
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://news.sun-asterisk.com/images/440x248/7c2f69b3-631b-4b2a-aabc-4eddf1bf8359.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title"><strong>Chinh phục chứng chỉ CKA 2024 cùng Hữu Kim (R&D):
+                                            "Kịch tính
+                                            và nhiều kinh nghiệm xương máu"</strong> </h6>
+                                    <h6 class="card-text">Sunner Hữu Kim (R&D) vừa trải qua hành trình thi chứng chỉ CKA
+                                        (Certified Kubernetes Administrator) trong năm 2024.</h6>
+                                    <br>
+                                    <a href="#" class="text-danger">Xem chi tiết&nbsp;
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://news.sun-asterisk.com/images/440x248/0975f17b-89f3-4eab-a4fd-33b55df9d80d.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title"><strong>Chinh phục chứng chỉ CKA 2024 cùng Hữu Kim (R&D):
+                                            "Kịch tính
+                                            và nhiều kinh nghiệm xương máu"</strong> </h6>
+                                    <h6 class="card-text">Sunner Hữu Kim (R&D) vừa trải qua hành trình thi chứng chỉ CKA
+                                        (Certified Kubernetes Administrator) trong năm 2024.</h6>
+                                    <br>
+                                    <a href="#" class="text-danger">Xem chi tiết&nbsp;
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://news.sun-asterisk.com/images/440x248/7d926be4-e8c6-4b1b-b4a8-e0ccf52f362b.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title"><strong>Chinh phục chứng chỉ CKA 2024 cùng Hữu Kim (R&D):
+                                            "Kịch tính
+                                            và nhiều kinh nghiệm xương máu"</strong> </h6>
+                                    <h6 class="card-text">Sunner Hữu Kim (R&D) vừa trải qua hành trình thi chứng chỉ CKA
+                                        (Certified Kubernetes Administrator) trong năm 2024.</h6>
+                                    <br>
+                                    <a href="#" class="text-danger">Xem chi tiết&nbsp;
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://news.sun-asterisk.com/images/440x248/f8e7e84c-29f1-4cbd-b2a3-263d42578a10.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title"><strong>Chinh phục chứng chỉ CKA 2024 cùng Hữu Kim (R&D):
+                                            "Kịch tính
+                                            và nhiều kinh nghiệm xương máu"</strong> </h6>
+                                    <h6 class="card-text">Sunner Hữu Kim (R&D) vừa trải qua hành trình thi chứng chỉ CKA
+                                        (Certified Kubernetes Administrator) trong năm 2024.</h6>
+                                    <br>
+                                    <a href="#" class="text-danger">Xem chi tiết&nbsp;
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://news.sun-asterisk.com/images/440x248/b8eab75a-a36f-4a25-82e6-8942a6ad62a3.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title"><strong>Chinh phục chứng chỉ CKA 2024 cùng Hữu Kim (R&D):
+                                            "Kịch tính
+                                            và nhiều kinh nghiệm xương máu"</strong> </h6>
+                                    <h6 class="card-text">Sunner Hữu Kim (R&D) vừa trải qua hành trình thi chứng chỉ CKA
+                                        (Certified Kubernetes Administrator) trong năm 2024.</h6>
+                                    <br>
+                                    <a href="#" class="text-danger">Xem chi tiết&nbsp;
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 4 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://news.sun-asterisk.com/images/440x248/0975f17b-89f3-4eab-a4fd-33b55df9d80d.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title"><strong>Chinh phục chứng chỉ CKA 2024 cùng Hữu Kim (R&D):
+                                            "Kịch tính
+                                            và nhiều kinh nghiệm xương máu"</strong> </h6>
+                                    <h6 class="card-text">Sunner Hữu Kim (R&D) vừa trải qua hành trình thi chứng chỉ CKA
+                                        (Certified Kubernetes Administrator) trong năm 2024.</h6>
+                                    <br>
+                                    <a href="#" class="text-danger">Xem chi tiết&nbsp;
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://news.sun-asterisk.com/images/440x248/1f30a6d8-342c-4186-a9a0-d6190995cc81.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title"><strong>Chinh phục chứng chỉ CKA 2024 cùng Hữu Kim (R&D):
+                                            "Kịch tính
+                                            và nhiều kinh nghiệm xương máu"</strong> </h6>
+                                    <h6 class="card-text">Sunner Hữu Kim (R&D) vừa trải qua hành trình thi chứng chỉ CKA
+                                        (Certified Kubernetes Administrator) trong năm 2024.</h6>
+                                    <br>
+                                    <a href="#" class="text-danger">Xem chi tiết&nbsp;
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://news.sun-asterisk.com/images/440x248/f8e7e84c-29f1-4cbd-b2a3-263d42578a10.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title"><strong>Chinh phục chứng chỉ CKA 2024 cùng Hữu Kim (R&D):
+                                            "Kịch tính
+                                            và nhiều kinh nghiệm xương máu"</strong> </h6>
+                                    <h6 class="card-text">Sunner Hữu Kim (R&D) vừa trải qua hành trình thi chứng chỉ CKA
+                                        (Certified Kubernetes Administrator) trong năm 2024.</h6>
+                                    <br>
+                                    <a href="#" class="text-danger">Xem chi tiết&nbsp;
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide5 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://news.sun-asterisk.com/images/440x248/1f30a6d8-342c-4186-a9a0-d6190995cc81.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title"><strong>Chinh phục chứng chỉ CKA 2024 cùng Hữu Kim (R&D):
+                                            "Kịch tính
+                                            và nhiều kinh nghiệm xương máu"</strong> </h6>
+                                    <h6 class="card-text">Sunner Hữu Kim (R&D) vừa trải qua hành trình thi chứng chỉ CKA
+                                        (Certified Kubernetes Administrator) trong năm 2024.</h6>
+                                    <br>
+                                    <a href="#" class="text-danger">Xem chi tiết&nbsp;
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://news.sun-asterisk.com/images/440x248/f8e7e84c-29f1-4cbd-b2a3-263d42578a10.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title"><strong>Chinh phục chứng chỉ CKA 2024 cùng Hữu Kim (R&D):
+                                            "Kịch tính
+                                            và nhiều kinh nghiệm xương máu"</strong> </h6>
+                                    <h6 class="card-text">Sunner Hữu Kim (R&D) vừa trải qua hành trình thi chứng chỉ CKA
+                                        (Certified Kubernetes Administrator) trong năm 2024.</h6>
+                                    <br>
+                                    <a href="#" class="text-danger">Xem chi tiết&nbsp;
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://news.sun-asterisk.com/images/440x248/7d926be4-e8c6-4b1b-b4a8-e0ccf52f362b.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title"><strong>Chinh phục chứng chỉ CKA 2024 cùng Hữu Kim (R&D):
+                                            "Kịch tính
+                                            và nhiều kinh nghiệm xương máu"</strong> </h6>
+                                    <h6 class="card-text">Sunner Hữu Kim (R&D) vừa trải qua hành trình thi chứng chỉ CKA
+                                        (Certified Kubernetes Administrator) trong năm 2024.</h6>
+                                    <br>
+                                    <a href="#" class="text-danger">Xem chi tiết&nbsp;
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nút điều khiển carousel -->
+                <div class="event-button">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="nav-button" aria-hidden="true">
+                            &gt;
+                        </span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next mx-5" type="button" data-bs-target="#carouselExampleRide"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="nav-button" aria-hidden="true">
+                            &lt; </span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div>
+
+            <a href="#" class="button button--bg-dark d-flex m-auto my-5" style="width: 50%;">
+                <span class="button__content">
+                    Xem nhiều tin hơn
+                </span>
+                <span class="button__icon">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- phan footer -->
+    <div class="container section">
+        <div class="row text-center overflow-hidden-x">
+            <!-- Logo -->
+            <div class="col-lg-3 col-md-3 text-lg-start text-center mb-2">
+
+                <a class="" href="#"><img src="https://sun-asterisk.vn/wp-content/uploads/2020/10/logo-sun@2x.png"
+                        alt="MyWebsite Logo" class="img-fluid" style="max-width: 50%;"></a>
+                <br>
+
+            </div>
+            <!-- First Column -->
+            <div class="col-lg-3 text-lg-start text-center">
+                <div class="circle"></div>
+                <h4 class="column-title">Chúng tôi là ai?</h4>
+                <div class="link-item">Tầm nhìn, sứ mệnh</div>
+                <div class="link-item">Giá trị cốt lõi</div>
+                <div class="link-item">Ý nghĩa tên Sun*</div>
+            </div>
+            <!-- Second Column -->
+            <div class="col-lg-3 text-lg-start text-center">
+                <div class="circle"></div>
+                <h4 class="column-title">Chúng tôi làm gì?</h4>
+                <div class="link-item">Creative & Engineering</div>
+                <div class="link-item">Talent Platform</div>
+                <div class="link-item">Dự án của chúng tôi</div>
+            </div>
+            <!-- Third Column -->
+            <div class="col-lg-3 text-lg-start text-center">
+                <div class="circle"></div>
+                <h4 class="column-title">Cập nhật tin tức</h4>
+                <div class="link-item">Văn hóa - Sự kiện</div>
+                <div class="link-item">Tuyển dụng</div>
+                <div class="link-item">Chính sách phúc lợi</div>
+            </div>
+        </div>
+        <div class="row text-center mt-5">
+            <div class="col-lg-3">
+                &nbsp;
+            </div>
+            <div class="col-lg-3 text-lg-start text-center">
+                <div class="circle"></div>
+                <h4 class="column-title">Liên hệ</h4>
+                <div class="link-item">
+                    SĐT: 84-24-3795-5417</div>
+                <div class="link-item">Email: hr@sun-asterisk.com</div>
+            </div>
+            <div class="col-lg-6 text-lg-start text-center">
+                <div class="circle"></div>
+                <h4 class="column-title">Văn phòng</h4>
+                <div class="link-item">T13, Keangnam Hanoi Landmark Tower, khu E6, khu ĐTM Cầu Giấy, phường Mễ
+                    Trì, quận Nam Từ Liêm, Hà Nội</div>
+                <div class="link-item">Tầng 4, tòa FHome Building, số 16 Lý Thường Kiệt, quận Hải Châu, Tp. Đà
+                    Nẵng</div>
+                <div class="link-item">Tầng 9, L'Mak Long Tower, số 101-103 Nguyễn Cửu Vân, Phường 17, Quận Bình
+                    Thạnh, Thành phố Hồ Chí Minh.</div>
+                <div class="link-item">Văn phòng Tokyo - Văn phòng Cebu - Văn phòng Phnom Penh</div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-4">
+        <div class="row">
+            <!-- Footer Left Column (50%) -->
+            <div class="col-lg-6 col-md-12 mb-4 d-flex ">
+                <div class="d-flex justify-content-center align-items-center me-2"
+                    style="border: 2px dashed rgba(255, 0, 0, 0.5);">
+                    <a href="index.html" class="">
+                        <img src="https://sun-asterisk.vn/wp-content/uploads/2020/10/bear-footer.png"
+                            alt="Sun* Inc. Tuyển Dụng - | Digital Creative Studio" style="max-height: 40px;">
+                    </a>
+                </div>
+                <div class="element-wrapper">
+                    <div class="footer__heading mb-3">
+                        <p class="footer-text-last">
+                            @ 2021 Sun-asterisk. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="footer__heading mb-3">
+                        <p class="footer-text-last">
+                            Giấy chứng nhận ĐKDN: 0106045931 do Sở KHĐT TP Hà Nội cấp lần đầu ngày 29/10/2012
+                        </p>
+                    </div>
+                    <div class="footer__heading mb-3">
+                        <p class="footer-text-last">
+                            Giấy phép hoạt động DVVL: 03/2022 do Sở LĐTBXH TP Hà Nội cấp lần đầu ngày 10/01/2022
+                        </p>
+                    </div>
+                    <div class="footer__heading">
+                        <p class="footer-text-last">
+                            Người đại diện theo pháp luật: KOBAYASHI TAIHEI - Tổng giám đốc
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Right Column (44%) -->
+            <div class="col-lg-6 col-md-12 mb-4 d-flex align-items-center justify-content-end">
+
+                <div class="d-flex justify-content-end">
+                    <div class="me-3">
+                        <a href="https://youtube.com" target="_blank">
+                            <i class="fa-brands fa-youtube fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="me-3">
+                        <a href="https://facebook.com" target="_blank">
+                            <i class="fa-brands fa-facebook fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="me-3">
+                        <a href="https://instagram.com" target="_blank">
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+
+
+                    <a href="#" class="d-inline-block w-25 mx-0 " target="_blank">
+                        <img src="https://news.sun-asterisk.com/_nuxt/img/6d2d06d.jpg" alt="Image Link"
+                            class="img-fluid" style="width: 40%;">
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="join-us-button d-flex justify-content-end">
+        <button class="haru-button d-flex align-items-center justify-content-center">
+            <div class="haru-button-text">
+                <span>Join us</span>
+            </div>
+        </button>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script scr="../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

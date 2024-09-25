@@ -46,34 +46,39 @@ a {
     /* Thay đổi màu chữ */
 }
 
-.container_navbar-active::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 25%;
-    right: 25%;
-    height: 4px;
-    width: 50%;
-    background-color: #c00;
-    /* Màu của thanh */
-    border-radius: 2px;
-    /* Bo tròn góc thanh */
-    transition: all 0.3s ease;
-}
+@media (min-width: 991px) {
 
-.nav-link:hover::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 25%;
-    right: 25%;
-    height: 4px;
-    width: 50%;
-    background-color: #c00;
-    /* Màu của thanh */
-    border-radius: 2px;
-    /* Bo tròn góc thanh */
-    transition: all 0.3s ease;
+
+    .container_navbar-active::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 25%;
+        right: 25%;
+        height: 4px;
+        width: 50%;
+        background-color: #c00;
+        /* Màu của thanh */
+        border-radius: 2px;
+        /* Bo tròn góc thanh */
+        transition: all 0.3s ease;
+    }
+
+    .nav-link:hover::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 25%;
+        right: 25%;
+        height: 4px;
+        width: 50%;
+        background-color: #c00;
+        /* Màu của thanh */
+        border-radius: 2px;
+        /* Bo tròn góc thanh */
+        transition: all 0.3s ease;
+    }
+
 }
 
 .btn {
@@ -139,8 +144,11 @@ a {
 }
 
 .business-content {
-    padding-left: 100px;
+    padding-left: 50px;
+    position: relative;
 }
+
+
 
 /* Xử lý phần card */
 .creative-studio__item {
@@ -308,6 +316,8 @@ a {
     background-color: #2b3441;
 }
 
+
+
 .button--bg-dark .button__icon {
     background-color: rgba(255, 255, 255, 0.1);
 }
@@ -388,7 +398,7 @@ a {
     position: absolute;
     bottom: -20px;
     /* Đặt nút ở góc dưới */
-    right: 20px;
+    right: 50px;
     /* Căn bên phải */
     display: flex;
     gap: 20px;
@@ -571,7 +581,35 @@ a {
 }
 
 .card {
-    margin: 0.5em;
+    margin: 1em;
+    border-radius: 3%;
+}
+
+.card-active-news {
+    position: relative;
+}
+
+.card-active-news::before {
+    content: "Tin nóng";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #C01111;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #fff;
+}
+
+.carousel-item .card-title:hover {
+    color: #c00;
+    cursor: pointer;
+}
+
+.carousel-item .card-text {
+    color: #4f4f4f;
 }
 
 @media screen and (max-width: 567px) {
@@ -599,4 +637,88 @@ a {
     gap: 20px;
     /* Căn bên phải */
     /* Khoảng cách giữa các nút */
+}
+
+/* phan footer */
+.section-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.section-title span {
+    font-weight: normal;
+    color: #888;
+}
+
+.column-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #3a4551;
+    margin-bottom: 2.5rem;
+}
+
+.link-item {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.link-item:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    z-index: -1;
+}
+
+.fa-brands {
+    color: #484b51;
+    /* Hiệu ứng chuyển màu nền */
+}
+
+.fa-brands:hover {
+    color: red;
+    /* Đổi màu chữ 'f' thành màu đỏ */
+    /* Màu nền khi di chuột */
+}
+
+
+/* join us button */
+.haru-button {
+    width: 76px !important;
+    height: 76px;
+    line-height: 60px;
+    font-size: 13px;
+    background-color: #c01111;
+    border-radius: 50%;
+    font-weight: 700;
+    text-align: center;
+    border: 8px solid #f9f9f9;
+    padding: 0;
+    cursor: pointer;
+    position: fixed;
+    /* Cố định nút */
+    bottom: 20px;
+    /* Khoảng cách từ cạnh dưới màn hình */
+    right: 20px;
+    /* Khoảng cách từ cạnh phải màn hình */
+    z-index: 1000;
+}
+
+.haru-button-text {
+    font-size: 15px;
+    color: #d7dadc;
 }
